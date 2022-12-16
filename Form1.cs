@@ -12,7 +12,7 @@
      };
             
      string[] autor = new string[6];
-        //autor[0] = "Eminescu";
+        //    autor[0] = "Eminescu";
         //    autor[1] = "Calinescu";
         //    autor[2] = "Petrescu";
         //    autor[3] = "Caragiale";
