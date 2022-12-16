@@ -16,7 +16,7 @@
         {
 
             Random rand = new Random();
-            int counter = rand.Next(0,6);
+            int counter = rand.Next(0,14);
             string[] citat = new string[6];
             citat[0] = "Primul Citat despre psihologie";
             citat[1] = "Al doilea citat despre psihologie";
@@ -38,8 +38,9 @@
 
         private void button2_Click(object sender, EventArgs e)
         {
-            textBox1.Text = $"Citat despre psihologie ";
-            label1.Text = $"Autorul citatului despre psihologie";
+
+            textBox1.Text = " ";
+            label1.Text =" ";
         }
 
         private void button3_Click(object sender, EventArgs e)
