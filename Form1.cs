@@ -26,17 +26,23 @@
             "Petrescu",
             "Barbu",
             "Porumbescu",
-            "3",
-            "a",
-            "s"
+            "Dostoevsky",
+            "Gogol",
+            "Tolstoy"
+        };
+
+        List<string> images = new List<string>()
+        {
+            "image0","image1","image2","image3","image4"
         };
 
        private void setQuote(int firstRandom, int secondRandom)
         {
             Random rand = new Random();
-            int counter = rand.Next(firstRandom, secondRandom);
-            textBox1.Text = citat[counter];
-            label1.Text = autor[counter];
+            int index = rand.Next(firstRandom, secondRandom);
+            //pictureBox1.Image = (Image)Properties.Resources.ResourceManager.GetObject(images[index]);
+            textBox1.Text = citat[index];
+            label1.Text = autor[index];
         }
 
         public Form1()
@@ -51,18 +57,18 @@
         
         private void button1_Click(object sender, EventArgs e)
         {
-            setQuote(0, 5);
+            setQuote(0, 4);
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            setQuote(6, 9);
+            setQuote(0, 4);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            setQuote(6, 9);
+            setQuote(0, 4);
           
         }
     }
