@@ -40,7 +40,7 @@
         {
             Random rand = new Random();
             int index = rand.Next(firstRandom, secondRandom);
-            //pictureBox1.Image = (Image)Properties.Resources.ResourceManager.GetObject(images[index]);
+            pictureBox1.Image = (Image)Properties.Resources.ResourceManager.GetObject(images[index]);
             textBox1.Text = citat[index];
             label1.Text = autor[index];
         }
